@@ -1,0 +1,101 @@
+.dashboard-report {
+  display: grid;
+  grid-template-rows: minmax(10px, auto) minmax(200, auto) minmax(200, auto);
+  gap: 3em ;
+  font-size: 15px;
+}
+
+
+.thermalAndMaskCheck {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 50%));
+  gap: 50px;
+}
+
+
+
+.studentInfo {
+  display: grid;
+  gap: 30px; 
+  grid-template-columns: 25% 45% 25%;
+  color: #838c99;
+}
+
+#student-late > p, #teacher-late>p {
+  padding-top: 20%;
+}
+
+#all-students, #all-teachers, #student-late, #teacher-late, #student-in-school, #student-not-in-school, #teacher-in-school, #teacher-not-in-school{
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+#abnormal_temp:hover, #mask_info:hover {
+  filter: brightness(150%);
+}
+
+
+#all-students:hover,  #student-late:hover,  #student-in-school:hover, #student-not-in-school:hover {
+  filter: brightness(100%);
+  color:white;
+  background-color: #ff6051;
+}
+
+#all-teachers:hover,#teacher-late:hover, #teacher-in-school:hover, #teacher-not-in-school:hover {
+  filter: brightness(100%);
+  color:white;
+  background-color: #6B5B95;
+}
+
+#temp_icon, #abnormal_temp {
+  background-color:#6B5B95;
+}
+
+#mask_icon, #mask_info {
+  background-color: #FF6F61;
+}
+
+
+
+
+.teacherInfo {
+  display: grid;
+  gap: 30px; 
+  grid-template-columns: 25% 45% 25%;
+  color: #838c99;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 85% 15%;
+  margin-bottom: 10px;
+}
+
+.back {
+  padding-left: 60%;
+}
+
+.attendance {
+  display: grid;
+  gap: 30px; 
+}
+
+#hall1, #hall2{
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr 0.4fr 1.3fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    "title title"
+    "temp_icon mask_icon"
+    "adnormal_temp mask";
+}
+
+
+.title { grid-area: title; background-color: white; font-size:30px; color:rgb(58, 57, 57);}
+#temp_icon { grid-area: temp_icon; color:white; font-size: 20px;}
+#mask_icon { grid-area: mask_icon; color: white; font-size: 20px;}
+#mask_info { grid-area: mask; color: white; font-size: 35px;}
+#abnormal_temp { grid-area: adnormal_temp; color: white; font-size: 35px;}

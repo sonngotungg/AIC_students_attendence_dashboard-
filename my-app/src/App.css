@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+BODY {
+  margin: 0;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+}
+
+.body {
+  margin-left: 250px;
+  padding: 2em;
+      padding-top: 2em;
+  padding-top: 1em;
+  height: inherit ;
+  background-color:#f5f6f7;
+}
+
+.menu {
+  width: 220px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  background: #f7f7f7;
+  font-family: Open Sans,sans-serif;
+  font-size: 12pt;
+  border-right: 20px;
+}
+
+.metismenu-container {
+  list-style: none;
+}
+.metismenu-container, .metismenu-item {
+  margin: 0;
+  padding: 0;
+}
+
+.metismenu > .metismenu-container > .metismenu-item > .metismenu-link, .metismenu > .metismenu-container > .metismenu-item > .metismenu-link .metismenu-state-icon {
+  line-height: 2.5em;
+}
+.metismenu-link {
+  color: rgb(15, 14, 14);
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+  -webkit-text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+  transition: height .3s,color .3s,background-color .3s;
+  -webkit-transition: height .3s,color .3s,background-color .3s;
+  display: block;
+  line-height: 2.5em;
+  text-decoration: none;
+}
+
+I.metismenu-icon, I.metismenu-state-icon {
+  text-align: center;
+  width: 3em;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+      font-size: 14px;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.metismenu-link > a > img {
+  width: 246px;
+}
+
+.metismenu-link > a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#c33a28;
+}
